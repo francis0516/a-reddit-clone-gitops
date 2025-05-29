@@ -11,7 +11,7 @@ pipeline {
          }
          stage("Checkout from SCM") {
              steps {
-                     git branch: 'main', credentialsId: 'github', url: 'https://github.com/francis0516/a-reddit-clone-gitops'
+                     git branch: 'main', credentialsId: 'github2', url: 'https://github.com/francis0516/a-reddit-clone-gitops'
              }
          }
          stage("Update the Deployment Tags") {
